@@ -1,6 +1,7 @@
 from django.urls import path
 from users import views as user_views
 
+
 from . import views
 
 app_name = 'itreporting'
@@ -11,5 +12,5 @@ urlpatterns = [
     path('about', views.about, name = 'about'),
     path('contact', views.contact, name = 'contact'),
     path('moduleslist', views.moduleslist, name = 'moduleslist'),
-    path('register', user_views.register, name = 'register'),
+    
 ]
